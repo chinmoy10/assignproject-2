@@ -197,6 +197,42 @@ header {
     border: 1px solid #ffffff;
 }
 
+/* change habit section */
+
+.change_habit_section{
+    width: 75%;
+    margin: 6.25rem auto;
+}
+
+.habit_title{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: .875rem;
+}
+
+.habit_description{
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff50;
+    margin-bottom: 4rem;
+}
+
+.habit_card{
+
+}
+
+.habit_img{
+    width: 15%;
+}
+
+.habit_img img{
+    width: 100%;
+    border: 5px solid #ffffff15;
+    border-radius: 50%;
+}
+
+
 /* responsive design */
 
 /* mobile */
