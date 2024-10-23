@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* all fonts */
+.miama_fonts {
+  font-family: "Miama", sans-serif;
+}
+
+.inter_font {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+/* Themes */
+.dark_theme {
+  background-color: black;
+}
+
+/* header css */
+header {
+  background: linear-gradient(360deg,#ffffff00, #111111 25%, #111111 50%, #111111 75%, #77777700 100%);
+  height: 715px;
+}
+
+.header_width {
+  width: 75%;
+  margin: 0px auto;
+}
+
+/* navbar */
+.gym_navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+  align-items: center;
+}
+
+.brand_logo {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.brand_logo a {
+  color: #e6533c;
+  text-decoration: none;
+}
+
+.fa-bars{
+    font-size: 1.5rem;
+    visibility: hidden;
+}
+
+.gym_nav_items {
+  border: 1px solid #ffffff1a;
+  border-radius: 2.5rem;
+  padding: .25rem;
+  padding-right: 1.5rem;
+  display: block;
+}
+
+.gym_nav_items ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.gym_nav_items ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.gym_nav_items ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+.gym_home_btn{
+    padding: .5rem 1.25rem;
+    background-color: #e6533c;
+    border-radius: 3rem;
+}
+/* responsive design */
+
+/* mobile */
+@media screen and (max-width: 576px) {
+    .header_width{
+        width:90%;
+    }
+    .gym_nav_items{
+        display: none;
+    }
+
+    .brand_logo{
+        font-size: 2rem;
+    }
+
+    .fa-bars{
+        visibility: visible;
+    }
+}
+/* tablet */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .header_width{
+        width:90%;
+    }
+
+    .gym_navbar{
+        flex-direction: column;
+    }
+
+    .brand_logo{
+        font-size: 2rem;
+    }
+}
