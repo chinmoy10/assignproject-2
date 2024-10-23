@@ -218,18 +218,35 @@ header {
     margin-bottom: 4rem;
 }
 
-.habit_card{
+.card_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 
+.habit_card{
+    text-align: center;
 }
 
 .habit_img{
-    width: 15%;
+    width: 100%;
 }
 
 .habit_img img{
     width: 100%;
     border: 5px solid #ffffff15;
     border-radius: 50%;
+}
+
+.card_title{
+    font-size: 1.125rem;
+    margin: 1.875rem 0rem .4rem;
+}
+
+.card_description{
+    font-size: .875rem;
+    color: #ffffff50;
 }
 
 
