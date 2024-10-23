@@ -200,20 +200,23 @@ header {
 /* change habit section */
 
 .change_habit_section,
-.run_extra_section{
+.run_extra_section,
+.meet_team_section{
     width: 75%;
     margin: 6.25rem auto;
 
 }
 
-.habit_title{
+.habit_title,
+.meet_team_title{
     font-size: 3rem;
     font-weight: 800;
     text-align: center;
     margin-bottom: .875rem;
 }
 
-.habit_description{
+.habit_description,
+.meet_team_description{
     font-size: 1rem;
     text-align: center;
     color: #ffffff50;
@@ -319,6 +322,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 6rem;
 }
 
 .bmi_table_title{
@@ -422,6 +426,77 @@ th{
     border-radius: .5rem;
     border: 0;
     font-size: 1rem;
+}
+
+/* meet our team */
+
+.trainer_container{
+    background-color: #ffffff20;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.all_trainer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.25rem;
+}
+
+.grid_trainers{
+    display: flex;
+    position: relative;
+    align-items: end;
+}
+
+.trainer_description{
+    position: absolute;
+    padding: 1.25rem;
+}
+
+.trainer_description h3{
+    font-size: 1.25rem;
+}
+
+.trainer_description p{
+    font-size: .875rem;
+    color: #ffffff90;
+}
+
+.grid_trainers img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 28rem;
+}
+
+.grid_trainer_1{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+}
+
+.grid_trainer_2{
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 1;
+}
+
+.grid_trainer_3{
+    grid-column: 9 / span 4;
+    grid-row: 1 / span 1;
+}
+
+.grid_trainer_4{
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+}
+
+.grid_trainer_5{
+    grid-column: 5 / span 4;
+    grid-row: 2 / span 1;
+}
+
+.grid_trainer_6{
+    grid-column: 9 / span 4;
+    grid-row: 2 / span 1;
 }
 
 /* responsive design */
@@ -581,7 +656,50 @@ th{
     .calculate_btn{
         width: 100%;
     }
+    .meet_team_description{
+        margin-bottom: 2rem;
+    }
+
+    .all_trainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 1.25rem;
+    }
+
+    .grid_trainer_1{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
     
+    .grid_trainer_2{
+        grid-column: 1 / span 1;;
+        grid-row: 2 / span 1;
+    }
+    
+    .grid_trainer_3{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    
+    .grid_trainer_4{
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    
+    .grid_trainer_5{
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+    }
+    
+    .grid_trainer_6{
+        grid-column: 1 / span 1;
+        grid-row: 6 / span 1;
+    }
+    
+    .grid_trainers img{
+        width: 100%;
+        height: 20rem;
+    }
 }
 /* tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -662,5 +780,66 @@ th{
     
     .join_now{
         width: 100%;
+    }
+
+    .bmi_cal_content{
+        width: 75%;
+        margin: 3.25rem auto;
+    }
+
+    .bmi_cal_title{
+        font-size: 2.5rem;
+    }
+
+    .bmi_calculate_part{
+        width:  75%;
+        flex-direction: column;
+        gap: 2.625rem;
+        align-items: start;
+        padding: 2rem 0rem;
+    }
+
+    .meet_team_description{
+        margin-bottom: 2rem;
+    }
+
+    .all_trainer{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grid_trainer_1{
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 1;
+    }
+    
+    .grid_trainer_2{
+        grid-column: 7 / span 6;
+        grid-row: 1 / span 1;
+    }
+    
+    .grid_trainer_3{
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 1;
+    }
+    
+    .grid_trainer_4{
+        grid-column: 7 / span 6;
+        grid-row: 2 / span 1;
+    }
+    
+    .grid_trainer_5{
+        grid-column: 1 / span 6;
+        grid-row: 3 / span 1;
+    }
+    
+    .grid_trainer_6{
+        grid-column: 7 / span 6;
+        grid-row: 3 / span 1;
+    }
+
+    .grid_trainers img{
+        width: 100%;
+        height: 15rem;
     }
 }
